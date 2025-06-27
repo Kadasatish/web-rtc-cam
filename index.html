@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dot + Cam + Voice</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Lasya RealTime Sync</h1>
+
+  <!-- Dot + Toggle -->
+  <div id="dot"></div>
+  <label class="switch">
+    <input type="checkbox" id="dotToggle" />
+    <span class="slider"></span>
+  </label>
+  <p>Dot Toggle</p>
+
+  <!-- Cam Range Switch -->
+  <div class="slider-container">
+    <input type="range" min="0" max="2" value="1" id="camSwitch" />
+    <div class="labels">
+      <span>📷 Back</span>
+      <span>🚫 Off</span>
+      <span>🤳 Front</span>
+    </div>
+  </div>
+
+  <!-- Video Boxes -->
+  <video id="myVideo" autoplay muted playsinline></video>
+  <video id="remoteVideo" autoplay playsinline></video>
+
+  <!-- PeerJS -->
+  <script src="https://cdn.jsdelivr.net/npm/peerjs@1.5.2/dist/peerjs.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
